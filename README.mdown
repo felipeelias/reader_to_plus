@@ -1,0 +1,3 @@
+# (google) Reader to (google) Plus
+
+This extension provides an way to share your Google Reader's items to Google Plus easily.
