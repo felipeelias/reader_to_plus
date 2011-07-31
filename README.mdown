@@ -23,3 +23,7 @@ Please, fork it and share it :)
 
 - You can update your changes by clicking on "Reload" link in extensions tab
 - Send me a pull request :)
+
+## Known bugs
+
+- On Google+, to enable the "Share" button, the user has to click in input box and type something
