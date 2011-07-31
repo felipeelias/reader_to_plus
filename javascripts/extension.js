@@ -1,9 +1,6 @@
 (function($) {
   var share_url = function( params ) {
-    var status = jQuery.param({
-      status: [params['title'], params['href']].join(' ')
-    });
-    return 'https://plus.google.com/?' + status;
+    return 'https://plus.google.com/?' + jQuery.param(params);
   },
 
   find_link_params = function( entry ) {
