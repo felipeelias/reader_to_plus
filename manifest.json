@@ -16,7 +16,7 @@
       "js": ["javascripts/jquery.min.js", "javascripts/extension.js"]
     },
     {
-      "matches": ["http://plus.google.com/?status=*", "https://plus.google.com/?status=*"],
+      "matches": ["http://plus.google.com/?*", "https://plus.google.com/?*"],
       "js": ["javascripts/jquery.min.js", "javascripts/plus_extension.js"]
     }
   ]
