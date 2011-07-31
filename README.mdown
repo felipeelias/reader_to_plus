@@ -4,9 +4,9 @@ Reader to Plus helps you to share your Google Reader's items to Google+ easily.
 
 It's easy to use, you just need to click on "Share on Google+" link and it will open for you the Google+ page with the link ready to share.
 
-This extension is still in development so, any feedback would be appreciated.
+![Reader to Plus](https://github.com/felipeelias/reader_to_plus/raw/master/screenshots/screenshot_2.png)
 
-If you're a developer and want to help, all code is open source and it's hosted on Github: [https://github.com/felipeelias/reader\_to\_plus](https://github.com/felipeelias/reader_to_plus)
+This extension is still in development so, any feedback would be appreciated.
 
 Please, fork it and share it :)
 
