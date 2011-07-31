@@ -7,6 +7,10 @@
     {
       "matches": ["https://*.google.com/reader/view/*"],
       "js": ["javascripts/jquery.min.js", "javascripts/extension.js"]
+    },
+    {
+      "matches": ["https://plus.google.com/?status=*"],
+      "js": ["javascripts/jquery.min.js", "javascripts/plus_extension.js"]
     }
   ]
 }
