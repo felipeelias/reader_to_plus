@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": ["https://*.google.com/reader/view/*"],
-      "js": ["javascripts/extension.js"]
+      "js": ["javascripts/jquery.min.js", "javascripts/extension.js"]
     }
   ]
 }
