@@ -1,9 +1,32 @@
-$("div.entry").live('click', function( e ) {
-  var link, href, item = $(e.target).closest('.entry');
+(function($) {
+  var share_url = function( params ) {
+    var status = jQuery.param({
+      status: [params['title'], params['href']].join(' ')
+    });
+    return 'https://plus.google.com/?' + status;
+  },
 
-  if (!item.find('.entry-actions span.google-plus').length) {
-    href = 'https://plus.google.com/?status=' + item.find('a.entry-title-link').attr('href');
-    link = $('<a target="_blank">Share to Google+</a>').attr('href', href);
-    item.find(".entry-actions span.tag").after($('<span class="link google-plus"></span>').html(link));
-  }
-});
+  find_link_params = function( entry ) {
+    var link = entry.find('a.entry-title-link');
+    return {
+      title: link.text(),
+      href: link.attr('href')
+    }
+  };
+
+  $("div.entry").live('click', function( e ) {
+    var entry   = $(e.target).closest('.entry'),
+        actions = entry.find('.entry-actions');
+
+    if ( !actions.find('span.google-plus').length ) {
+      var link = $('<span class="link google-plus"></span>').html(
+        $('<a/>', {
+          target: '_blank',
+          href: share_url(find_link_params(entry))
+        }).text('Share to Google')
+      );
+
+      actions.append(link);
+    }
+  });
+})(jQuery)
