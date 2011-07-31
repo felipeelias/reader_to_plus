@@ -11,12 +11,12 @@
 
   "content_scripts": [
     {
-      "matches": ["https://*.google.com/reader/view/*"],
+      "matches": ["http://*.google.com/reader/view/*", "https://*.google.com/reader/view/*"],
       "css": ["css/extension.css"],
       "js": ["javascripts/jquery.min.js", "javascripts/extension.js"]
     },
     {
-      "matches": ["https://plus.google.com/?status=*"],
+      "matches": ["http://plus.google.com/?status=*", "https://plus.google.com/?status=*"],
       "js": ["javascripts/jquery.min.js", "javascripts/plus_extension.js"]
     }
   ]
