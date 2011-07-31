@@ -1,14 +1,9 @@
 $("div.entry").live('click', function( e ) {
-  var item = $(e.target).closest('.entry');
+  var link, href, item = $(e.target).closest('.entry');
 
   if (!item.find('.entry-actions span.google-plus').length) {
-    item.find(".entry-actions span.tag").after($('<span class="link google-plus">Share to Google+</span>'));
+    href = 'https://plus.google.com/?status=' + item.find('a.entry-title-link').attr('href');
+    link = $('<a target="_blank">Share to Google+</a>').attr('href', href);
+    item.find(".entry-actions span.tag").after($('<span class="link google-plus"></span>').html(link));
   }
-});
-
-$(".entry-actions span.google-plus").live('click', function( e ) {
-  var entry = $(e.target).closest('.entry');
-  var link = entry.find('a.entry-original').attr('href');
-
-  $("#gbg3").trigger('click');
 });
