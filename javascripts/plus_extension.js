@@ -16,7 +16,7 @@ $(function() {
   $(".n-Nd").trigger('click');
 
   var reloader = function() {
-    var div = $("div[id=':3j.f']");
+    var div = $("div.n-Ob div[contenteditable]");
     if ( !div.length ) {
       setTimeout(reloader, 200);
     } else {
