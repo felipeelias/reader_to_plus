@@ -1,29 +1,46 @@
 (function($) {
-  var share_url = function( params ) {
+  var shareUrl = function( params ) {
     return 'https://plus.google.com/?' + jQuery.param(params);
   },
 
-  find_link_params = function( entry ) {
+  findLinkParams = function( entry ) {
     var link = entry.find('a.entry-title-link');
     return {
       title: link.text(),
       href: link.attr('href')
     }
-  };
+  },
 
-  $("div.entry").live('click', function( e ) {
-    var entry   = $(e.target).closest('.entry'),
-        actions = entry.find('.entry-actions');
+  createShareLink = function( actions ) {
+    var entry = $(actions).closest('.entry');
 
     if ( !actions.find('span.google-plus').length ) {
       var link = $('<span class="link google-plus"></span>').html(
         $('<a/>', {
           target: '_blank',
-          href: share_url(find_link_params(entry))
+          href: shareUrl(findLinkParams(entry))
         }).text('Share to Google')
       );
-
       actions.append(link);
+      console.log('link created');
+    }
+  };
+
+  $('body').delegate('div#entries', 'DOMNodeInserted', function(e) {
+    var actions, target = $(e.target);
+    if ( target.is('div.entry') ) {
+      actions = target.find('div.entry-actions');
+      if (actions.length > 0) {
+        createShareLink( actions );
+      }
     }
   });
-})(jQuery)
+
+  $('body').delegate('div.entry', 'DOMNodeInserted', function(e) {
+    var target = $(e.target);
+    if ( target.is('div.entry-actions') ) {
+      createShareLink( target );
+    }
+  });
+
+})(jQuery);
