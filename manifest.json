@@ -203,7 +203,7 @@
       "js": ["javascripts/jquery.min.js", "javascripts/extension.js"]
     },
     {
-      "matches": ["http://plus.google.com/?*", "https://plus.google.com/?*"],
+      "matches": ["http://plus.google.com/*?title=*", "https://plus.google.com/*?title=*"],
       "js": ["javascripts/jquery.min.js", "javascripts/plus_extension.js"]
     }
   ]
