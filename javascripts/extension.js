@@ -22,7 +22,6 @@
         }).text('Share to Google')
       );
       actions.append(link);
-      console.log('link created');
     }
   };
 
