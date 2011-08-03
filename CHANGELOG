@@ -1,0 +1,22 @@
+# 0.0.6
+
+- Fix: issue with keyboard navigation
+- Fix: issue in expanded list
+
+# 0.0.5
+
+- Fix: issue with different Google Reader's TLD
+
+# 0.0.4
+
+- Improve the code
+- Fix: issue with script execution in Google+
+
+# 0.0.3
+
+- Fix: issues with dinamic classes in Google+
+- Fix: execute scripts in https
+
+# 0.0.2
+
+- Fix: wrong app ID
