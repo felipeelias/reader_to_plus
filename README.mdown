@@ -27,7 +27,5 @@ Please, fork it and share it :)
 ## Known bugs / todo
 
 - On Google+, to enable the "Share" button, the user has to click in input box and type something
-- If you use the keyboard shortcuts (j, k), the icon doesn't appear
 - TODO: create a keyboard shortcut to share
 - TODO: when click, also share the item in Google reader
-- Issue with google reader's URL. It only works with google.com, not .com.br, .de, .pl...
