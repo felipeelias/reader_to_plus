@@ -1,6 +1,6 @@
 (function($) {
   var params = (function() {
-    var url_tokens = document.URL.replace(document.baseURI.concat('?'), '').split(/&/g),
+    var url_tokens = ('' + document.location.search).replace(/\?/, '').split(/&/g),
         params = {};
 
     for(piece in url_tokens) {
@@ -12,10 +12,10 @@
   })();
 
   $(function() {
-    $(".n-Nd").trigger('click');
+    $("#contentPane div:first div:eq(1)").trigger('click');
 
     var reloader = function() {
-      var div = $("div.n-Ob div[contenteditable]");
+      var div = $("#contentPane div[contenteditable]");
       if ( !div.length ) {
         setTimeout(reloader, 200);
       } else {
