@@ -19,7 +19,7 @@
         $('<a/>', {
           target: '_blank',
           href: shareUrl(findLinkParams(entry))
-        }).text('Share to Google')
+        }).text('Share on Google+')
       );
       actions.append(link);
     }
@@ -39,6 +39,13 @@
     var target = $(e.target);
     if ( target.is('div.entry-actions') ) {
       createShareLink( target );
+    }
+  });
+
+  $(document).bind('keydown', 'shift+g', function() {
+    var entry = $('div#current-entry');
+    if ( entry.find('div.entry-actions').length > 0 ) {
+      window.open(shareUrl(findLinkParams(entry)));
     }
   });
 

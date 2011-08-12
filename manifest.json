@@ -200,11 +200,11 @@
         "*://*.google.cat/reader/view/*"
       ],
       "css": ["css/extension.css"],
-      "js": ["javascripts/jquery.min.js", "javascripts/extension.js"]
+      "js": ["javascripts/jquery.min.js", "javascripts/jquery.hotkeys.min.js", "javascripts/extension.js"]
     },
     {
       "matches": ["http://plus.google.com/*?title=*", "https://plus.google.com/*?title=*"],
-      "js": ["javascripts/jquery.min.js", "javascripts/plus_extension.js"]
+      "js": ["javascripts/jquery.min.js", "javascripts/jquery.hotkeys.min.js", "javascripts/plus_extension.js"]
     }
   ]
 }
