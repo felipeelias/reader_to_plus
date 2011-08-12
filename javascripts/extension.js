@@ -19,7 +19,7 @@
         $('<a/>', {
           target: '_blank',
           href: shareUrl(findLinkParams(entry))
-        }).text('Share to Google')
+        }).text('Share on Google+')
       );
       actions.append(link);
     }
