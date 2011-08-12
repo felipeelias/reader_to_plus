@@ -27,5 +27,5 @@ Please, fork it and share it :)
 ## Known bugs / todo
 
 - On Google+, to enable the "Share" button, the user has to click in input box and type something
-- TODO: create a keyboard shortcut to share
+- <del>TODO: create a keyboard shortcut to share</del> Thanks [@albertb](https://github.com/albertb)
 - TODO: when click, also share the item in Google reader
