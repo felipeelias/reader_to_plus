@@ -1,3 +1,8 @@
+# 0.0.8
+
+- Add 'shift+g' keyboard shortcut to share (by [albertb](https://github.com/albertb))
+- Fix text
+
 # 0.0.7
 
 - Fix: issue with Google+ element renaming
@@ -19,7 +24,7 @@
 
 # 0.0.3
 
-- Fix: issues with dinamic classes in Google+
+- Fix: issues with dynamic classes in Google+
 - Fix: execute scripts in https
 
 # 0.0.2
