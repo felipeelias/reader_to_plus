@@ -45,7 +45,7 @@
   $(document).bind('keydown', 'g', function() {
     var entry = $('div#current-entry');
     if ( entry.find('div.entry-actions').length > 0 ) {
-      window.open(shareUrl(findLinkParams( $('div#current-entry'))));
+      window.open(shareUrl(findLinkParams(entry)));
     }
   });
 
