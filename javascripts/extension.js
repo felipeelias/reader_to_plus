@@ -42,7 +42,7 @@
     }
   });
 
-  $(document).bind('keydown', 'g', function() {
+  $(document).bind('keydown', 'shift+g', function() {
     var entry = $('div#current-entry');
     if ( entry.find('div.entry-actions').length > 0 ) {
       window.open(shareUrl(findLinkParams(entry)));
